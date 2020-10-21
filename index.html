@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FONTS -->
+  <script src="https://kit.fontawesome.com/d7835fbeaf.js" crossorigin="anonymous"></script>
+  <title> Rock, Paper, Scissors, Spock and Lizard</title>
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="area">
+    <!-- HEAD DIV -->
+    <div class="head-div overlay flex">
+      <img class="logo" src="images/logo-bonus.svg" alt="logo-img">
+      <div class="score text">
+        <h4>SCORE</h4>
+        <h1>10</h1>
+      </div>
+    </div>
+    <!-- ICONS -->
+    <div class="options flex">
+      <img class="pentagon" src="images/bg-pentagon.svg">
+      <div class="yellow icon cursor"><img class="scissor sign flex" src="./images/icon-scissors.svg"></div>
+      <div class="cyan icon cursor"><img class="spock sign flex" src="./images/icon-spock.svg"></div>
+      <div class="blue icon cursor"><img class="paper sign flex" src="./images/icon-paper.svg"></div>
+      <div class="purple icon cursor"><img class="lizard sign flex" src="./images/icon-lizard.svg"></div>
+      <div class="red icon cursor"><img class="rock sign flex" src="./images/icon-rock.svg"></div>
+    </div>
+    <!-- RESULT -->
+    <div class="final visible">
+      <div class="result text flex">
+        <div class="play-div">
+          <h3>YOU PICKED</h3>
+          <div class="container-icon player"><img src=""></div>
+        </div>
+        <div class="declare overlay text">
+          <h1></h1>
+          <button class="play-again text">PLAY AGAIN</button>
+        </div>
+        <div class="play-div">
+          <h3>THE HOUSE PICKED</h3>
+          <div class="container-icon bot"><img src=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- RULE BUTTON -->
+    <div id="rule" class="overlay text flex cursor">RULES</div>
+
+  </div>
+  <!-- RULE BOX -->
+  <div id="first" class="visible"><i class="fas fa-times" id="cross" class="cursor"></i></div>
+  <!-- JS FILE -->
+  <script src="main.js"></script>
+</body>
+
+</html>
